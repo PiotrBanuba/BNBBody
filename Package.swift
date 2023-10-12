@@ -13,9 +13,9 @@ let package = Package(
             name: "BNBBody",
             targets: [
                 "BNBBody",
-                "BNBBodyBNBSdkCoreTarget",
-                "BNBBodyBNBEffectPlayerTarget",
-                "BNBBodyBNBScriptingTarget"
+                "BNBBodyBNBSdkCore",
+                "BNBBodyBNBEffectPlayer",
+                "BNBBodyBNBScripting"
             ]
         ),
     ],
@@ -40,7 +40,7 @@ let package = Package(
             checksum: "34e0ca085a0747d6898e95c3acb8a41af7e67cba45e38e34ba51c95a25759e20"
         ),
         .target(
-            name: "BNBBodyBNBSdkCoreTarget",
+            name: "BNBBodyBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -49,7 +49,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBBodyBNBEffectPlayerTarget",
+            name: "BNBBodyBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -58,7 +58,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBBodyBNBScriptingTarget",
+            name: "BNBBodyBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
