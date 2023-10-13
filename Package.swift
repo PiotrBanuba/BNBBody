@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-13"
+let bnbPackageVersion: Version = "1.8.0-14"
 
 let package = Package(
     name: "BNBBody",
@@ -13,9 +13,9 @@ let package = Package(
             name: "BNBBody",
             targets: [
                 "BNBBody_Target",
-                "BNBBody_BNBBody_Target",
-                "BNBBody_BNBBody_Target",
-                "BNBBody_BNBBody_Target"
+                "BNBBody_BNBSdkCore_Target",
+                "BNBBody_BNBEffectPlayer_Target",
+                "BNBBody_BNBScripting_Target"
             ]
         ),
     ],
