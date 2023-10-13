@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-14"
+let bnbPackageVersion: Version = "1.8.0-15"
 
 let package = Package(
     name: "BNBBody",
@@ -12,10 +12,10 @@ let package = Package(
         .library(
             name: "BNBBody",
             targets: [
-                "BNBBody_Target",
-                "BNBBody_BNBSdkCore_Target",
-                "BNBBody_BNBEffectPlayer_Target",
-                "BNBBody_BNBScripting_Target"
+                "BNBBody",
+                "BNBBody_BNBSdkCore",
+                "BNBBody_BNBEffectPlayer",
+                "BNBBody_BNBScripting"
             ]
         ),
     ],
@@ -35,12 +35,12 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "BNBBody_Target",
+            name: "BNBBody",
             url: "https://d2cm7wtcqqw29.cloudfront.net/1.8.0-58-g46079e7d74/BNBBody.zip",
             checksum: "34e0ca085a0747d6898e95c3acb8a41af7e67cba45e38e34ba51c95a25759e20"
         ),
         .target(
-            name: "BNBBody_BNBSdkCore_Target",
+            name: "BNBBodyBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -49,7 +49,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBBody_BNBEffectPlayer_Target",
+            name: "BNBBodyBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -58,7 +58,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBBody_BNBScripting_Target",
+            name: "BNBBodyBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
